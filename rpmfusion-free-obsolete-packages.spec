@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        28
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -20,7 +20,21 @@ Obsoletes: gmtk < 1.0.9-3
 # Last build dvdrip-0.98.11-15.fc27
 Provides: dvdrip = 0.98.11-16
 Obsoletes: dvdrip < 0.98.11-16
-
+# Last build transcode-1.1.7-22.fc27
+Provides: transcode = 1.1.7-23
+Obsoletes: transcode < 1.1.7-23
+# Last build DVDAuthorWizard-1.4.6-12.fc28
+Provides: DVDAuthorWizard = 1.4.6-13
+Obsoletes: DVDAuthorWizard < 1.4.6-13
+# Last build DVDRipOMatic-0.95-15.fc28
+Provides: DVDRipOMatic = 0.95-16
+Obsoletes: DVDRipOMatic < 0.95-16
+# Last build m2vmp2cut-0.86-8.fc28
+Provides: m2vmp2cut = 0.86-9
+Obsoletes: m2vmp2cut < 0.86-9
+# Last build subtitleripper-0.3-11.fc28
+Provides: subtitleripper = 0.3-12
+Obsoletes: subtitleripper < 0.3-12
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -40,6 +54,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Mon Apr 09 2018 Leigh Scott <leigh123linux@googlemail.com> - 28-3
+- Add transcode, DVDAuthorWizard, DVDRipOMatic, m2vmp2cut and subtitleripper
+
 * Thu Mar 01 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 28-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
