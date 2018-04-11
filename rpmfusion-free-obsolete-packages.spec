@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        28
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -35,6 +35,9 @@ Obsoletes: m2vmp2cut < 0.86-9
 # Last build subtitleripper-0.3-11.fc28
 Provides: subtitleripper = 0.3-12
 Obsoletes: subtitleripper < 0.3-12
+# Last build gmediafinder-1.5.1-10.694694c.fc28
+Provides: gmediafinder = 1.5.1-11.694694c
+Obsoletes: gmediafinder < 1.5.1-11.694694c
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -54,6 +57,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed Apr 11 2018 Leigh Scott <leigh123linux@googlemail.com> - 28-4
+- Add gmediafinder (rfbz #4862)
+
 * Mon Apr 09 2018 Leigh Scott <leigh123linux@googlemail.com> - 28-3
 - Add transcode, DVDAuthorWizard, DVDRipOMatic, m2vmp2cut and subtitleripper
 
