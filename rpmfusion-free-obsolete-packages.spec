@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        28
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -57,6 +57,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Fri Jul 27 2018 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 28-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Wed Apr 11 2018 Leigh Scott <leigh123linux@googlemail.com> - 28-4
 - Add gmediafinder (rfbz #4862)
 
