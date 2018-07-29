@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        28
-Release:        5%{?dist}
+Version:        29
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -38,6 +38,10 @@ Obsoletes: subtitleripper < 0.3-12
 # Last build gmediafinder-1.5.1-10.694694c.fc28
 Provides: gmediafinder = 1.5.1-11.694694c
 Obsoletes: gmediafinder < 1.5.1-11.694694c
+# Last build ffmpeg-compat-0.6.7-10.fc26
+Provides: ffmpeg-compat = 0.6.7-11
+Obsoletes: ffmpeg-compat < 0.6.7-11
+
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -57,6 +61,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Sun Jul 29 2018 Nicolas Chauvet <kwizart@gmail.com> - 29-1
+- Add ffmpeg-compat - rhbz#4952
+
 * Fri Jul 27 2018 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 28-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
