@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        29
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -41,7 +41,9 @@ Obsoletes: gmediafinder < 1.5.1-11.694694c
 # Last build ffmpeg-compat-0.6.7-10.fc26
 Provides: ffmpeg-compat = 0.6.7-11
 Obsoletes: ffmpeg-compat < 0.6.7-11
-
+# Last build freetype-freeworld-2.9.1-1.fc30
+Provides: freetype-freeworld = 2.9.1-2
+Obsoletes: freetype-freeworld < 2.9.1-2
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -61,6 +63,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed Oct 31 2018 Leigh Scott <leigh123linux@googlemail.com> - 29-2
+- Add freetype-freeworld
+
 * Sun Jul 29 2018 Nicolas Chauvet <kwizart@gmail.com> - 29-1
 - Add ffmpeg-compat - rhbz#4952
 
