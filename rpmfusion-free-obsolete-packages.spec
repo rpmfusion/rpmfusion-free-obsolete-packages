@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        29
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -44,6 +44,9 @@ Obsoletes: ffmpeg-compat < 0.6.7-11
 # Last build freetype-freeworld-2.9.1-1.fc30
 Provides: freetype-freeworld = 2.9.1-2
 Obsoletes: freetype-freeworld < 2.9.1-2
+# Last build libtxc_dxtn-1.0.1-3.gitef072983.fc27
+Provides: libtxc_dxtn = 1.0.1-4
+Obsoletes: libtxc_dxtn < 1.0.1-4
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -63,6 +66,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Tue Dec 11 2018 Nicolas Chauvet <kwizart@gmail.com> - 29-3
+- Add libtxc_dxtn
+
 * Wed Oct 31 2018 Leigh Scott <leigh123linux@googlemail.com> - 29-2
 - Add freetype-freeworld
 
