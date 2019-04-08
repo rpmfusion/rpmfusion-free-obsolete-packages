@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        29
-Release:        4%{?dist}
+Version:        30
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -75,6 +75,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 30-1
+- Bump version to 30
+
 * Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 29-4
 - Add k9copy, kplayer and yle-dl
 
