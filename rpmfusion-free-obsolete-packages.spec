@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        29
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -47,6 +47,15 @@ Obsoletes: freetype-freeworld < 2.9.1-2
 # Last build libtxc_dxtn-1.0.1-3.gitef072983.fc27
 Provides: libtxc_dxtn = 1.0.1-4
 Obsoletes: libtxc_dxtn < 1.0.1-4
+# Last build k9copy-3.0.3-7.fc29
+Provides: k9copy = 3.0.3-8
+Obsoletes: k9copy < 3.0.3-8
+# Last build kplayer-0.7.2-4.fc29
+Provides: kplayer = 0.7.2-5
+Obsoletes: kplayer < 0.7.2-5
+# Last build yle-dl-2.26-6.fc30
+Provides: yle-dl = 2.26-7
+Obsoletes: yle-dl < 2.26-7
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -66,6 +75,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 29-4
+- Add k9copy, kplayer and yle-dl
+
 * Tue Dec 11 2018 Nicolas Chauvet <kwizart@gmail.com> - 29-3
 - Add libtxc_dxtn
 
