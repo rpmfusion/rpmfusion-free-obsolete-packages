@@ -1,5 +1,5 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        30
+Version:        31
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
@@ -56,6 +56,15 @@ Obsoletes: kplayer < 0.7.2-5
 # Last build yle-dl-2.26-6.fc30
 Provides: yle-dl = 2.26-7
 Obsoletes: yle-dl < 2.26-7
+# Last build gstreamer-ffmpeg-0.10.13-22.fc31
+Provides: gstreamer-ffmpeg = 0.10.13-23
+Obsoletes: gstreamer-ffmpeg < 0.10.13-23
+# Last build gstreamer-plugins-bad-0.10.23-13.fc31
+Provides: gstreamer-plugins-bad = 0.10.23-14
+Obsoletes: gstreamer-plugins-bad < 0.10.23-14
+# Last build gstreamer-plugins-ugly-0.10.19-33.fc31
+Provides: gstreamer-plugins-ugly = 0.10.19-34
+Obsoletes: gstreamer-plugins-ugly < 0.10.19-34
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -75,6 +84,10 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Fri Aug 23 2019 Leigh Scott <leigh123linux@googlemail.com> - 31-1
+- Bump version to 31
+- Add gstreamer-ffmpeg, gstreamer-plugins-bad, gstreamer-plugins-ugly
+
 * Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 30-1
 - Bump version to 30
 
