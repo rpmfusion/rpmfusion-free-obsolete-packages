@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        31
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -65,6 +65,9 @@ Obsoletes: gstreamer-plugins-bad < 0.10.23-14
 # Last build gstreamer-plugins-ugly-0.10.19-33.fc31
 Provides: gstreamer-plugins-ugly = 0.10.19-34
 Obsoletes: gstreamer-plugins-ugly < 0.10.19-34
+# Last build gxine-0.5.910-5.fc31
+Provides: gxine = 0.5.910-6
+Obsoletes: gxine < 0.5.910-6
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -84,6 +87,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Sat Aug 24 2019 Leigh Scott <leigh123linux@gmail.com> - 31-2
+- Add gxine
+
 * Fri Aug 23 2019 Leigh Scott <leigh123linux@googlemail.com> - 31-1
 - Bump version to 31
 - Add gstreamer-ffmpeg, gstreamer-plugins-bad, gstreamer-plugins-ugly
