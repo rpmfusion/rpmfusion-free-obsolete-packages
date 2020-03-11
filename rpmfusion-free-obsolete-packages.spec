@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        31
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -68,6 +68,9 @@ Obsoletes: gstreamer-plugins-ugly < 0.10.19-34
 # Last build gxine-0.5.910-5.fc31
 Provides: gxine = 0.5.910-6
 Obsoletes: gxine < 0.5.910-6
+# Last build python2-vlc-3.0.6109-0.4.20190508git949d19e.fc32
+Provides: python2-vlc = 3.0.6109-1
+Obsoletes: python2-vlc < 3.0.6109-1
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -87,6 +90,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed Mar 11 2020 Leigh Scott <leigh123linux@gmail.com> - 31-3
+- Add python2-vlc
+
 * Sat Aug 24 2019 Leigh Scott <leigh123linux@gmail.com> - 31-2
 - Add gxine
 
