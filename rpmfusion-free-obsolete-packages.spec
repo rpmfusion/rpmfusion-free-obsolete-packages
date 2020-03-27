@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        31
-Release:        3%{?dist}
+Version:        32
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -71,6 +71,14 @@ Obsoletes: gxine < 0.5.910-6
 # Last build python2-vlc-3.0.6109-0.4.20190508git949d19e.fc32
 Provides: python2-vlc = 3.0.6109-1
 Obsoletes: python2-vlc < 3.0.6109-1
+# Last build wireguard-kmod-0.0.20191219-2.fc32
+Provides: akmod-wireguard = 0.0.20191219-3
+Obsoletes: akmod-wireguard < 0.0.20191219-3
+Provides: kmod-wireguard = 0.0.20191219-3
+Obsoletes: kmod-wireguard < 0.0.20191219-3
+# Last build wireguard-0.0.20191219-2.fc32
+Provides: wireguard = 0.0.20191219-3
+Obsoletes: wireguard < 0.0.20191219-3
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -90,6 +98,10 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Fri Mar 27 2020 Leigh Scott <leigh123linux@gmail.com> - 32-1
+- Bump version to 32
+- Add wireguard
+
 * Wed Mar 11 2020 Leigh Scott <leigh123linux@gmail.com> - 31-3
 - Add python2-vlc
 
