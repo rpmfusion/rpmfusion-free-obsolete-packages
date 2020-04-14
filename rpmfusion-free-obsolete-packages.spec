@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        32
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -99,6 +99,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Tue Apr 14 2020 Nicolas Chauvet <kwizart@gmail.com> - 32-2
+- Add missing wireguard-kmod-common
+
 * Fri Mar 27 2020 Leigh Scott <leigh123linux@gmail.com> - 32-1
 - Bump version to 32
 - Add wireguard
