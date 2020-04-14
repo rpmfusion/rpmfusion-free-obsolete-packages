@@ -77,6 +77,7 @@ Obsoletes: akmod-wireguard < 0.0.20191219-3
 Provides: kmod-wireguard = 0.0.20191219-3
 Obsoletes: kmod-wireguard < 0.0.20191219-3
 # Last build wireguard-0.0.20191219-2.fc32
+Provides: wireguard-kmod-common = 0.0.20191219
 Provides: wireguard = 0.0.20191219-3
 Obsoletes: wireguard < 0.0.20191219-3
 
