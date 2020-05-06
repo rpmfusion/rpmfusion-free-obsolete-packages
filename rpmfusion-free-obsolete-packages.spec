@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        32
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -56,9 +56,9 @@ Obsoletes: kplayer < 0.7.2-5
 # Last build yle-dl-2.26-6.fc30
 Provides: yle-dl = 2.26-7
 Obsoletes: yle-dl < 2.26-7
-# Last build gstreamer-ffmpeg-0.10.13-22.fc31
-Provides: gstreamer-ffmpeg = 0.10.13-23
-Obsoletes: gstreamer-ffmpeg < 0.10.13-23
+# Last build gstreamer-ffmpeg-0.10.13-24.fc31
+Provides: gstreamer-ffmpeg = 0.10.13-25
+Obsoletes: gstreamer-ffmpeg < 0.10.13-25
 # Last build gstreamer-plugins-bad-0.10.23-13.fc31
 Provides: gstreamer-plugins-bad = 0.10.23-14
 Obsoletes: gstreamer-plugins-bad < 0.10.23-14
@@ -99,6 +99,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed May 06 2020 Leigh Scott <leigh123linux@gmail.com> - 32-3
+- Bump gstreamer-ffmpeg version
+
 * Tue Apr 14 2020 Nicolas Chauvet <kwizart@gmail.com> - 32-2
 - Add missing wireguard-kmod-common
 
