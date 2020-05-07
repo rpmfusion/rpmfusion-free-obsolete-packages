@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        32
-Release:        3%{?dist}
+Version:        33
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -80,6 +80,9 @@ Obsoletes: kmod-wireguard < 0.0.20191219-3
 Provides: wireguard-kmod-common = 0.0.20191219
 Provides: wireguard = 0.0.20191219-3
 Obsoletes: wireguard < 0.0.20191219-3
+# Last build gnuboy-svgalib-1.0.3-24.fc32
+Provides: gnuboy-svgalib = 1.0.3-25
+Obsoletes: gnuboy-svgalib < 1.0.3-25
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -99,6 +102,10 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Thu May 07 2020 Andrea Musuruane <musuruan@gmail.com> - 33-1
+- Bump version to 33
+- Add gnuboy-svgalib
+
 * Wed May 06 2020 Leigh Scott <leigh123linux@gmail.com> - 32-3
 - Bump gstreamer-ffmpeg version
 
