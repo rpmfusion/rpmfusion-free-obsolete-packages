@@ -1,5 +1,5 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        33
+Version:        34
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
@@ -83,6 +83,12 @@ Obsoletes: wireguard < 0.0.20191219-3
 # Last build gnuboy-svgalib-1.0.3-24.fc32
 Provides: gnuboy-svgalib = 1.0.3-25
 Obsoletes: gnuboy-svgalib < 1.0.3-25
+# Last build fuse-exfat-1.3.0-6.fc34
+Provides: fuse-exfat = 1.3.0-7
+Obsoletes: fuse-exfat < 1.3.0-7
+# Last build exfat-utils-1.3.0-6.fc34
+Provides: exfat-utils = 1.3.0-7
+Obsoletes: exfat-utils < 1.3.0-7
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -102,6 +108,10 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Fri Feb 26 2021 Leigh Scott <leigh123linux@gmail.com> - 34-1
+- Bump version to 34
+- Add exfat-utils and fuse-exfat
+
 * Thu May 07 2020 Andrea Musuruane <musuruan@gmail.com> - 33-1
 - Bump version to 33
 - Add gnuboy-svgalib
