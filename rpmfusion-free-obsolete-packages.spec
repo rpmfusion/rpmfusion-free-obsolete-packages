@@ -1,5 +1,5 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        34
+Version:        35
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
@@ -89,6 +89,9 @@ Obsoletes: fuse-exfat < 1.3.0-7
 # Last build exfat-utils-1.3.0-6.fc34
 Provides: exfat-utils = 1.3.0-7
 Obsoletes: exfat-utils < 1.3.0-7
+# Last build chromium-browser-privacy-88.0.4324.150-1.fc34
+Provides: chromium-browser-privacy = 88.0.4324.150-2
+Obsoletes: chromium-browser-privacy < 88.0.4324.150-2
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -108,6 +111,10 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed Nov 10 2021 Leigh Scott <leigh123linux@gmail.com> - 35-1
+- Bump version to 35
+- Add chromium-browser-privacy
+
 * Fri Feb 26 2021 Leigh Scott <leigh123linux@gmail.com> - 34-1
 - Bump version to 34
 - Add exfat-utils and fuse-exfat
