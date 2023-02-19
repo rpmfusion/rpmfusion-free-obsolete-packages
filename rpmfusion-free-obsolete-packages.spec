@@ -1,5 +1,5 @@
 Name:           rpmfusion-free-obsolete-packages
-Version:        35
+Version:        36
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
@@ -111,6 +111,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Sun Feb 19 2023 Leigh Scott <leigh123linux@gmail.com> - 36-1
+- Bump
+
 * Wed Nov 10 2021 Leigh Scott <leigh123linux@gmail.com> - 35-1
 - Bump version to 35
 - Add chromium-browser-privacy
