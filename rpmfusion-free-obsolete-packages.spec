@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        38
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -9,6 +9,9 @@ Source0:        README
 BuildArch:      noarch
 
 
+# Last build pulseaudio-module-bluetooth-freeworld-1.4-13.fc37
+Provides: pulseaudio-module-bluetooth-freeworld = 1.4-14
+Obsoletes: pulseaudio-module-bluetooth-freeworld < 1.4-14
 # Last build gnome-mplayer = 1.0.9-3.20150203svn2476.fc22
 Provides: gnome-mplayer = 1.0.9-4
 Obsoletes: gnome-mplayer < 1.0.9-4
@@ -111,6 +114,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Wed May 01 2024 Sérgio Basto <sergio@serjux.com> - 38-2
+- Add pulseaudio-module-bluetooth-freeworld
+
 * Sun Feb 19 2023 Leigh Scott <leigh123linux@gmail.com> - 38-1
 - Bump
 
