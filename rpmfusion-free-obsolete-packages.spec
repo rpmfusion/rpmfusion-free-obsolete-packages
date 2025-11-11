@@ -1,6 +1,6 @@
 Name:           rpmfusion-free-obsolete-packages
 Version:        38
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-free
 
 License:        MIT
@@ -95,6 +95,9 @@ Obsoletes: exfat-utils < 1.3.0-7
 # Last build chromium-browser-privacy-88.0.4324.150-1.fc34
 Provides: chromium-browser-privacy = 88.0.4324.150-2
 Obsoletes: chromium-browser-privacy < 88.0.4324.150-2
+# Last build qt5-qtwebengine-freeworld-5.15.18-3.fc43
+Provides: qt5-qtwebengine-freeworld = 5.15.18-4
+Obsoletes: qt5-qtwebengine-freeworld < 5.15.18-4
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -114,6 +117,9 @@ cp -p %{SOURCE0} .
 %doc README
 
 %changelog
+* Tue Nov 11 2025 Leigh Scott <leigh123linux@gmail.com> - 38-3
+- Add qt5-qtwebengine-freeworld
+
 * Wed May 01 2024 Sérgio Basto <sergio@serjux.com> - 38-2
 - Add pulseaudio-module-bluetooth-freeworld
 
